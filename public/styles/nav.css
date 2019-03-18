@@ -11,13 +11,13 @@
 }
 
 
-.logo {
+#nav-bar .logo {
     height: 80px;
     width: 80px;
     float: left;
 }
 
-.header {
+#nav-bar .header {
     font-size: 2rem;
     line-height: 2.5;
     padding-left: 10px;
