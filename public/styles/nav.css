@@ -1,13 +1,12 @@
 #nav-bar {
     position: fixed;
     height: 80px;
-    width: 100%;
     background-color: #00a087;
     color: #e8fdff;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 2em;
-    padding-right: 2ems;
+    padding: 0px 2em;
+    left: 0;
+    right: 0;
+    top: 0;
 }
 
 
@@ -15,12 +14,12 @@
     height: 80px;
     width: 80px;
     float: left;
+    margin-right: 10px;
 }
 
 #nav-bar .header {
     font-size: 2rem;
-    line-height: 2.5;
-    padding-left: 10px;
+    line-height: 80px;
     float: left;
     
     
