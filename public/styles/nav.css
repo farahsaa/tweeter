@@ -18,5 +18,11 @@
 }
 
 .header {
+    font-size: 2rem;
+    line-height: 2.5;
+    padding-left: 10px;
+    float: left;
+    
+    
 
 }
