@@ -4,14 +4,36 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
+ 
 
   function createTweetElement(data){
 
+    // let art = document.createElement('article');
+    // art.appendChild(document.createTextNode(data.content.text));
+
+    let article = $('<article class="tweet">');
+    let img = $('<img>');
+    img.attr('src', data.user.avatars.small);
+    article.append($('<header>')
+                    .append(img)
+                    .append($('<span class= "username">').text(data.user.name))
+                    .append($('<span class="handle">').text(data.user.handle))
+                    );
+    article.append($('<div class="body">').append($('<p>').text(data.content.text)));
+    article.append($('<footer>')    
+                     .append($('<span>').text(data.created_at))
+                     .append($('<i class ="fas fa-heart">'))
+                     .append($('<i class ="fas fa-retweet">'))
+                     .append($('<i class ="fas fa-flag">')))
+    
+    return article;
+
+    /*
     return `<article class = "tweet">
     <header>
       <img src="${data["user"]["avatars"]["small"]}">
-      <span>${data["user"]["name"]}</span>
-      <span>${data["user"]["handle"]}</span>
+      <span class = "username">${data["user"]["name"]}</span>
+      <span class = "handle">${data["user"]["handle"]}</span>
     </header>
 
     <div class= "body">
@@ -24,6 +46,7 @@
       <i class="fas fa-flag"></i>
     </footer>
   </article>`
+  */
   }
   
   function renderTweets(tweets) {

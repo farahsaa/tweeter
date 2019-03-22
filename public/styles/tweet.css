@@ -1,6 +1,5 @@
 .tweet {
     background-color: white;
-    padding: 15px 15px;
     background-color: white;
     border-radius: 10px;
     border: 1px #eeeeee solid;
@@ -47,3 +46,8 @@
   }
 
   
+
+  .handle{
+    float: right;
+    padding-left: 160px;
+  }

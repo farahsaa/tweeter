@@ -13,7 +13,8 @@ section.new-tweet{
     border-radius: 5px;
     padding: 10px 10px;
     background-color: lightgray;
-    margin: 20px
+    margin: 20px;
+    display: none;
 }
 
 textarea{
