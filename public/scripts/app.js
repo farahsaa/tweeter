@@ -51,10 +51,12 @@ loadTweets()
         var characterCount = $("textarea").val().length;
 
         if (characterCount === 0){
-            alert("please add tweet")
-        }
-        else if (characterCount > 140){
-            alert("tweet can only be 140 characters or less")
+            $(".error").addClass(".errormessage").text("field is empty").show();
+
+
+
+          }else if (characterCount > 140){
+            $(".error").addClass(".errormessage").text("tweet must be 140 characters or less").show();
 
         } 
 
@@ -66,6 +68,7 @@ loadTweets()
                 success: function(){
                     console.log("ajax successful")
                     loadTweets()
+                    $(".error").hide();
               }
         })
         }
