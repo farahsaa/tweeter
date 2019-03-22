@@ -29,4 +29,15 @@
 #nav-bar button {
  float: right;
  margin-top: 20px;
+ color: #00a087;
+ background-color: #ccffcc;
+ padding: 15px;
+ border-radius: 5px;
+ border: 1.5px solid black;
+ font-size: 18px;
+}
+
+#nav-bar button:hover {
+color:black;
+background-color:white;
 }
