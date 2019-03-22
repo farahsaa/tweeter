@@ -43,7 +43,7 @@
 }
 $(document).ready(function() {
 loadTweets()
-       
+
 
       $("form").submit(function(event) {
         event.preventDefault();
@@ -51,12 +51,12 @@ loadTweets()
         var characterCount = $("textarea").val().length;
 
         if (characterCount === 0){
-            $(".error").addClass(".errormessage").text("field is empty").show();
+            $(".error").text("field is empty").show();
 
 
 
           }else if (characterCount > 140){
-            $(".error").addClass(".errormessage").text("tweet must be 140 characters or less").show();
+            $(".error").text("tweet must be 140 characters or less").show();
 
         } 
 
