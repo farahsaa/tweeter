@@ -29,7 +29,7 @@ $(document).ready(function() {
   function renderTweets(tweets) {
     for (var tweet of tweets){
         var $tweet = createTweetElement(tweet);
-        $(".tweets-container").append($tweet); 
+        $(".tweets-container").prepend($tweet); 
     }
    }
    
@@ -41,9 +41,9 @@ $(document).ready(function() {
       },
       });
 }
+
 loadTweets()
        
-
 
       $("form").submit(function(event) {
         event.preventDefault();
@@ -65,6 +65,7 @@ loadTweets()
                 data: form.serialize(),
                 success: function(){
                     console.log("ajax successful")
+                    loadTweets()
               }
         })
         }
