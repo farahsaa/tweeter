@@ -3,7 +3,7 @@
  * jQuery is already loaded
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
-$(document).ready(function() {
+
 
   function createTweetElement(data){
 
@@ -15,7 +15,7 @@ $(document).ready(function() {
     </header>
 
     <div class= "body">
-       <p> ${data["content"]["text"]}</p>
+       <p> ${escape(data["content"]["text"])}</p>
     </div>
     <footer>
       <span>${data["created_at"]}</span>
@@ -41,7 +41,7 @@ $(document).ready(function() {
       },
       });
 }
-
+$(document).ready(function() {
 loadTweets()
        
 
