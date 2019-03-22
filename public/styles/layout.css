@@ -29,6 +29,13 @@ body {
   color: black;
 
 }
+
+.tweets-container {
+  background-color: white;
+  display: grid;
+}
+
+
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */

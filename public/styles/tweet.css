@@ -2,13 +2,41 @@
     display: flex;
     flex-direction: column;
     background-color: white;
-    padding: 15px 15px
+    padding: 15px 15px;
     background-color: white;
     border-radius: 15px;
     border: 1px #eeeeee solid;
     margin: 5px;
     overflow: hidden;
     opacity: 0.5;
-    transition: 0.3s ease;
-  
+    /* transition: 0.3s ease; */ 
   }
+
+  /* .tweet:hover {
+    border: 1px #BBBBBB solid;
+    opacity:1;
+  } */
+
+
+.tweets-container {
+    background-color: white;
+    display: grid;
+  }
+
+  .tweet header {
+      background color: #f1f1f1 
+      display: flex;
+  }
+
+  .tweet footer {
+    border-top: 1px solid gray;
+    padding: 10px;
+  }
+
+
+  .flagtweet {
+    float: right;
+    opacity: 0;
+    transition: 0.3s ease;
+  }
+  
