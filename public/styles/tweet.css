@@ -1,48 +1,41 @@
 .tweet {
-    display: flex;
-    flex-direction: column;
     background-color: white;
     padding: 15px 15px;
     background-color: white;
-    border-radius: 15px;
+    border-radius: 10px;
     border: 1px #eeeeee solid;
-    margin: 5px;
+    margin: 20px;
     overflow: hidden;
-    /* opacity: 0.5; */
+    opacity: 0.5;
+    justify-content: center;
+    align-content: center;
+    
     /* transition: 0.3s ease; */ 
   }
 
-  /* .tweet:hover {
+  .tweet:hover {
     border: 1px #BBBBBB solid;
     opacity:1;
-  } */
-
-
-.tweets-container {
-    background-color: white;
-    display: grid;
   }
 
-.tweet header {
-      background-color: #f1f1f1;
-      display: flex;
-  }
 
+  .tweet header{
+    display:flex;
+    background-color:#d1cccc ;
+    padding:2px;
+  }
   .tweet footer {
     border-top: 1px solid gray;
     padding: 10px;
   }
-
-
+ 
   .tweet i{
     float: right;
     transition: 0.3s ease;
     color: rgb(42, 192, 117)
   }
   
-  .tweet body {
-      margin:
-      padding:
-      
-
+  .body {
+      margin: 50px 0px;
+      padding:0px 20px;
   }
