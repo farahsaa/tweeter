@@ -82,4 +82,20 @@ const data = [
   
 
       renderTweets(data)
+
+
+      $("form").submit(function(event) {
+        event.preventDefault();
+        var form = $(this);
+         $.ajax({
+                type: "POST",
+                url: "/tweets",
+                data: form.serialize(),
+                success: function(){
+                    console.log("ajax successful")
+              }
+        })
+      })
+
+
   });
