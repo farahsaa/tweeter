@@ -8,7 +8,7 @@
     border: 1px #eeeeee solid;
     margin: 5px;
     overflow: hidden;
-    opacity: 0.5;
+    /* opacity: 0.5; */
     /* transition: 0.3s ease; */ 
   }
 
@@ -23,8 +23,8 @@
     display: grid;
   }
 
-  .tweet header {
-      background color: #f1f1f1 
+.tweet header {
+      background-color: #f1f1f1;
       display: flex;
   }
 
@@ -34,9 +34,15 @@
   }
 
 
-  .flagtweet {
+  .tweet i{
     float: right;
-    opacity: 0;
     transition: 0.3s ease;
+    color: rgb(42, 192, 117)
   }
   
+  .tweet body {
+      margin:
+      padding:
+      
+
+  }
