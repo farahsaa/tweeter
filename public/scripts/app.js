@@ -79,9 +79,17 @@ const data = [
         $(".tweets-container").append($tweet); 
     }
    }
-  
-
-      renderTweets(data)
+   
+   function loadTweets (){
+    $.ajax({
+        url:"/tweets",
+        success: function(data){
+            renderTweets(data)
+      },
+      });
+}
+loadTweets()
+       
 
 
       $("form").submit(function(event) {
