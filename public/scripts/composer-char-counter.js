@@ -1,7 +1,7 @@
 $(document).ready(function() {
-console.log(document)
+  //  this event handler is counting down the characters being tweeted. If character count is greater than 140, font will be red. otherwise tweet
 $('textarea').keyup(function(){
-  console.log('')
+
 
   var length = 140 -  $(this).val().length;
   $('.counter').text(length);
@@ -15,3 +15,4 @@ $('textarea').keyup(function(){
   });
   
   });
+
